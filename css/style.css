@@ -1,0 +1,63 @@
+*{margin: 0; padding: 0;}
+@font-face{
+     font-family:"CFC";
+     src:url('../fonts/CFCherokee-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family:"disko";
+    src:url('../fonts/disko/Disko.ttf') format('truetype');
+}
+.main_container{
+
+    background-color: #873600;
+    min-height: 1800px;   
+}
+
+    
+.logo{
+    width: 1309px;
+    font-family: disko;
+    font-size: 50px;
+    color: white;
+    background-color: #60092B;
+    padding: 20px;
+}
+
+/*menubar css*/
+.menubar{min-height: 43px;width: 1285px; background-color: #F4D03F; margin: 0 auto;}
+.menubar ul{list-style-type:none;}
+.menubar ul li{float: left; border-left: 1px solid #6E2C00;position: relative;}
+.menubar ul li:first-child{padding-left: 3px; border-left:none; }
+.menubar ul li:last-child{}
+
+.menubar ul li a{text-decoration: none; color: white; display: block; padding: 12px 60px; font-family:CFC ;color: #9E002F; transition: 1.2s;}
+.menubar ul li a:hover{background-color:orange; transform: scale(1.1)}
+
+/*dropdown menu css*/
+.menubar ul li ul{background-color:#F4D03F ;position: absolute;left: -99999px;}
+.menubar ul li:hover ul{left: 0px;}
+.menubar ul li ul li{float: none;border-left:none; border-right: none;border-top: 1px solid #6E2C00 ; border-bottom: 1px solid #9C640C;width:205px;}
+menubar ul li ul li:first-child{border-top:none;}
+.menubar ul li ul li:last-child{border-bottom: none;}
+.menubar ul li ul li a{padding: 12px 48px; text-align: center;}
+.menubar ul li ul li a:hover{}
+
+.image_slide{
+    padding-top: 0px;
+}
+.gallary{font-family: disko; font-size: 30px;text-align: center; color: white;margin-top: 20px;margin-bottom: 50px;}
+/*this is image gallary css*/
+.image_gallary{
+    min-height: 400px;
+}
+.image_gallary .item{
+    min-height: 550px; width: 49.8%; float: left;
+}
+.image_gallary .item .image img{width: 550px; height: 350px; padding-left: 60px; transition: 2s;}
+.image_gallary .item .image:hover img{transform: scale(1.2);}
+.caption_image{text-align: center; font-family: disko;color: white; font-size: 20px;}
+
+
+
+
+.footer{text-align: center; font-family: disko;color: black; font-size: 30px;min-height: 100px; background-color: #7D6608;margin-top: 550px;}
